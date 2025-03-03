@@ -1,14 +1,21 @@
 import { initializeApp } from '@react-native-firebase/app';
+import { 
+  FIREBASE_API_KEY, 
+  FIREBASE_AUTH_DOMAIN, 
+  FIREBASE_PROJECT_ID, 
+  FIREBASE_STORAGE_BUCKET, 
+  FIREBASE_MESSAGING_SENDER_ID, 
+  FIREBASE_APP_ID 
+} from '@env';
 
 // Your Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyACg1FLsNpx6KlhAq6f_OD81znOu2rmE8M",
-  authDomain: "tija-57482.firebaseapp.com",
-  projectId: "tija-57482",
-  storageBucket: "tija-57482.firebasestorage.app",
-  messagingSenderId: "348163673220",
-  appId: "1:348163673220:web:6b9a9cd9874da425e2c6d1",
-  measurementId: "G-WZSY911HTJ"
+  apiKey: FIREBASE_API_KEY,
+  authDomain: FIREBASE_AUTH_DOMAIN,
+  projectId: FIREBASE_PROJECT_ID,
+  storageBucket: FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: FIREBASE_MESSAGING_SENDER_ID,
+  appId: FIREBASE_APP_ID
 };
 
 // Initialize Firebase
