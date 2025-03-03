@@ -43,6 +43,7 @@ TIJA integrates several AI-powered features using the DeepSeek API:
 - Android Studio (for Android development)
 - Xcode (for iOS development)
 - DeepSeek API key
+- Firebase project
 
 ### Installation
 
@@ -54,14 +55,6 @@ cd TIJA-app
 # Install dependencies
 npm install
 
-# Setup environment variables
-# Create a .env file at project root with:
-DEEPSEEK_API_KEY=your_api_key_here
-FIREBASE_API_KEY=your_firebase_api_key_here
-
-# Start Metro Bundler
-npx react-native start
-
 # Run on Android
 npx react-native run-android
 
@@ -69,12 +62,37 @@ npx react-native run-android
 npx react-native run-ios
 ```
 
-### Setting up DeepSeek API
+### Firebase Setup
+
+The app is already configured to use Firebase. The configuration is in `src/services/firebaseConfig.js`. The Firebase project used is:
+
+```
+Project ID: tija-57482
+```
+
+The app uses the following Firebase services:
+- Firebase Authentication (Email/Password)
+- Firestore Database (for storing tasks, focus sessions, user settings)
+- Firebase Analytics
+
+If you're forking this project or setting up your own Firebase project, you'll need to:
+
+1. Create a new Firebase project in the Firebase console
+2. Enable Authentication, Firestore, and Analytics
+3. Update the Firebase configuration in `src/services/firebaseConfig.js`
+4. Update security rules in Firestore
+
+### DeepSeek API Setup
+
+To utilize the AI features, you'll need to sign up for a DeepSeek API key:
 
 1. Sign up for a DeepSeek API account at [https://deepseek.com](https://deepseek.com)
 2. Create a new API key in your dashboard
-3. Add the API key to your .env file as shown above
-4. The app will automatically use this key to make API requests
+3. Create a `.env` file in the project root and add:
+
+```
+DEEPSEEK_API_KEY=your_api_key_here
+```
 
 ## Project Structure
 
@@ -108,8 +126,7 @@ To modify or extend the AI capabilities, you can adjust the prompts and API para
 - [x] Basic task management functionality
 - [x] Focus timer implementation
 - [x] AI-powered insights and recommendations
-- [ ] User authentication with Firebase
-- [ ] Cloud synchronization of tasks and focus sessions
+- [x] Firebase integration
 - [ ] Push notifications for task reminders
 - [ ] Advanced analytics dashboard
 - [ ] Smart scheduling of recurring tasks
