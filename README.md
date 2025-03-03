@@ -23,3 +23,41 @@ TIJA integrates several AI-powered features using the DeepSeek API:
 - **Task Optimization**: Suggests the best order for completing tasks based on your productivity patterns
 - **Schedule Generation**: Creates optimized daily schedules based on your tasks and habits
 - **Personalized Motivation**: Generates motivational messages based on your progress and challenges
+
+## Tech Stack
+
+- **Frontend**: React Native
+- **State Management**: Redux Toolkit
+- **UI Components**: React Native Paper
+- **Navigation**: React Navigation
+- **Backend**: Firebase (Authentication, Firestore)
+- **AI/ML**: DeepSeek API
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14+)
+- npm or yarn
+- React Native CLI
+- Android Studio (for Android development)
+- Xcode (for iOS development)
+- DeepSeek API key
+- Firebase project
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/mvonombogho/TIJA-app.git
+cd TIJA-app
+
+# Install dependencies
+npm install
+
+# Run on Android
+npx react-native run-android
+
+# Run on iOS
+npx react-native run-ios
+```
