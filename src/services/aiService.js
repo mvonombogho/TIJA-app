@@ -1,11 +1,5 @@
 import axios from 'axios';
-
-// This is a placeholder API key; in a real app, you would use environment variables 
-// or a secure storage mechanism for API keys
-const API_KEY = 'YOUR_DEEPSEEK_API_KEY';
-
-// Base URL for DeepSeek API
-const DEEPSEEK_API_URL = 'https://api.deepseek.com/v1';
+import { DEEPSEEK_API_KEY, DEEPSEEK_API_URL } from '@env';
 
 /**
  * AI Service for TIJA app using DeepSeek API
@@ -59,7 +53,7 @@ const aiService = {
         },
         {
           headers: {
-            'Authorization': `Bearer ${API_KEY}`,
+            'Authorization': `Bearer ${DEEPSEEK_API_KEY}`,
             'Content-Type': 'application/json',
           },
         }
@@ -115,7 +109,7 @@ const aiService = {
         },
         {
           headers: {
-            'Authorization': `Bearer ${API_KEY}`,
+            'Authorization': `Bearer ${DEEPSEEK_API_KEY}`,
             'Content-Type': 'application/json',
           },
         }
@@ -168,7 +162,7 @@ const aiService = {
         },
         {
           headers: {
-            'Authorization': `Bearer ${API_KEY}`,
+            'Authorization': `Bearer ${DEEPSEEK_API_KEY}`,
             'Content-Type': 'application/json',
           },
         }
@@ -213,7 +207,7 @@ const aiService = {
         },
         {
           headers: {
-            'Authorization': `Bearer ${API_KEY}`,
+            'Authorization': `Bearer ${DEEPSEEK_API_KEY}`,
             'Content-Type': 'application/json',
           },
         }
