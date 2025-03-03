@@ -83,3 +83,35 @@ If you encounter Gradle sync issues:
 If you get SDK location errors:
 - Go to File > Settings > Appearance & Behavior > System Settings > Android SDK
 - Make sure the Android SDK is properly set up
+
+### Firebase Setup
+
+The app is already configured to use Firebase. The configuration is in `src/services/firebaseConfig.js` and the Android configuration is in `android/app/google-services.json`. The Firebase project used is:
+
+```
+Project ID: tija-57482
+```
+
+The app uses the following Firebase services:
+- Firebase Authentication (Email/Password)
+- Firestore Database (for storing tasks, focus sessions, user settings)
+- Firebase Analytics
+
+If you're forking this project or setting up your own Firebase project, you'll need to:
+
+1. Create a new Firebase project in the Firebase console
+2. Enable Authentication, Firestore, and Analytics
+3. Update the Firebase configuration in `src/services/firebaseConfig.js`
+4. Replace the google-services.json file with your own
+
+### DeepSeek API Setup
+
+To utilize the AI features, you'll need to sign up for a DeepSeek API key:
+
+1. Sign up for a DeepSeek API account at [https://deepseek.com](https://deepseek.com)
+2. Create a new API key in your dashboard
+3. Create a `.env` file in the project root and add:
+
+```
+DEEPSEEK_API_KEY=your_api_key_here
+```
