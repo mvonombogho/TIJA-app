@@ -115,3 +115,60 @@ To utilize the AI features, you'll need to sign up for a DeepSeek API key:
 ```
 DEEPSEEK_API_KEY=your_api_key_here
 ```
+
+## Project Structure
+
+```
+/android          # Android native code
+/src
+  /assets        # Images, fonts, etc.
+  /components    # Reusable UI components
+  /navigation    # Navigation configuration
+  /screens       # App screens
+  /services      # API calls, Firebase, AI service
+  /store         # Redux store, slices, actions
+  /styles        # Theme and style configuration
+  /utils         # Helper functions
+  /hooks         # Custom hooks
+  App.js         # Main app component
+index.js         # Entry point for React Native
+app.json         # App configuration
+babel.config.js  # Babel configuration
+metro.config.js  # Metro bundler configuration
+```
+
+## AI Implementation
+
+The AI features are implemented in the `src/services/aiService.js` file:
+
+- `generateProductivityInsights()`: Analyzes user data to provide personalized insights
+- `optimizeTaskSchedule()`: Creates an optimal schedule based on tasks and user patterns
+- `generateMotivationMessage()`: Creates personalized motivation messages
+- `analyzeOptimalFocusTimes()`: Determines when the user is most productive
+
+To modify or extend the AI capabilities, you can adjust the prompts and API parameters in the aiService.
+
+## Development Roadmap
+
+- [x] Basic task management functionality
+- [x] Focus timer implementation
+- [x] AI-powered insights and recommendations
+- [x] Firebase integration
+- [ ] Push notifications for task reminders
+- [ ] Advanced analytics dashboard
+- [ ] Smart scheduling of recurring tasks
+- [ ] Habit tracking integration
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit your changes: `git commit -m 'Add some amazing feature'`
+4. Push to the branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
