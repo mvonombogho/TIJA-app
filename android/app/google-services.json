@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "348163673220",
+    "project_id": "tija-57482",
+    "storage_bucket": "tija-57482.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348163673220:android:6b9a9cd9874da425e2c6d1",
+        "android_client_info": {
+          "package_name": "com.tija"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACg1FLsNpx6KlhAq6f_OD81znOu2rmE8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
